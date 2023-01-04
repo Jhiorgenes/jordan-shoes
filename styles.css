@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+:root {
+  --white: #f9f9f9;
+  --white-200: #ebe9ea;
+  --black-light: #181818;
+  --gray: #474747;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: var(--white);
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.typed-cursor {
+  display: none;
+}
+
+.top {
+  background-color: var(--black-light);
+  display: flex;
+  justify-content: center;
+}
+
+.top p {
+  color: var(--white);
+  font-size: 16px;
+  line-height: 31px;
+  font-weight: 500;
+  padding: 15px 0;
+}
+
+.brand {
+  background-color: var(--white);
+  padding: 7px 0;
+  line-height: 47px;
+}
+
+.header {
+  text-align: start;
+  background-image: url('./assets/wallpaper.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 337px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  color: var(--white);
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.description {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .info {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0 20px;
+}
+
+.main .info h2 {
+  color: var(--black-light);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 54px;
+}
+
+.main .info p {
+  color: var(--gray);
+  line-height: 28px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.main .card-area {
+  margin: 60px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.main .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 374px;
+  height: 302px;
+  background-color: var(--white-200);
+}
+
+.main .card img {
+  width: 250px;
+  height: 150px;
+}
+
+.footer {
+  background-color: var(--black-light);
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  line-height: 36px;
+  color: var(--white);
+}
+
+@media (min-width: 900px) {
+  .top p {
+    padding: 20px 0;
+    line-height: 19px;
+  }
+  .brand {
+    padding: 15px 0;
+    line-height: 19px;
+  }
+  .header {
+    padding-left: 100px;
+    min-height: 500px;
+  }
+  .header h1 {
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 600;
+    max-width: 600px;
+  }
+  .header p {
+    font-size: 24px;
+    line-height: 38px;
+    max-width: 700px;
+    font-weight: 500;
+  }
+  .main .info h2 {
+    font-size: 32px;
+  }
+  .main .info p {
+    font-size: 24px;
+  }
+
+  .main .card-area {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 100px;
+    justify-content: center;
+  }
+}
